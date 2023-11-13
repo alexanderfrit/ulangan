@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Membuat array dengan nama negara
+      let negara = [
+        "Indonesia",
+        "Malaysia",
+        "Singapura",
+        "Thailand",
+        "Filipina",
+        "Vietnam",
+        "Myanmar",
+        "Laos",
+        "Kamboja",
+        "Brunei",
+      ];
+
+      // Menampilkan seluruh data yang berada di dalam array
+      for (let i = 0; i < negara.length; i++) {
+        console.log(negara[i]);
+      }
+
+      // Mengakses nilai value dari negara 'Indonesia'
+      let indexIndonesia = negara.indexOf("Indonesia");
+      console.log("Indonesia berada pada indeks ke-" + indexIndonesia);
+
+      // Menambahkan nama negara dengan method push
+      negara.push("Timor Leste");
+      console.log(negara);
+    </script>
+  </body>
+</html>

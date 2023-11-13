@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Kasir Sederhana</h2>
+
+    <form id="myForm">
+      Kode Barang: <input type="text" id="kode" name="kode" /><br /><br />
+      Nama Barang: <input type="text" id="nama" name="nama" /><br /><br />
+      Harga Barang: <input type="number" id="harga" name="harga" /><br /><br />
+      Jumlah Barang:
+      <input type="number" id="jumlah" name="jumlah" /><br /><br />
+      <input type="button" value="Hitung Total" onclick="hitungTotal()" />
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+      function hitungTotal() {
+        var kode = document.getElementById("kode").value;
+        var nama = document.getElementById("nama").value;
+        var harga = document.getElementById("harga").value;
+        var jumlah = document.getElementById("jumlah").value;
+
+        var total = harga * jumlah;
+
+        document.getElementById("output").innerHTML =
+          "Kode Barang: " +
+          kode +
+          "<br>" +
+          "Nama Barang: " +
+          nama +
+          "<br>" +
+          "Harga Barang: " +
+          harga +
+          "<br>" +
+          "Jumlah Barang: " +
+          jumlah +
+          "<br>" +
+          "Total Harga: " +
+          total;
+      }
+    </script>
+  </body>
+</html>
